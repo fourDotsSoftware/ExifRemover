@@ -1,0 +1,36 @@
+// ExifRemoverExt.idl : IDL source for ExifRemoverExt
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (ExifRemoverExt.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	
+	object,
+	
+	uuid(D113B12E-EEDF-4536-AF27-D173AB7E1E15),
+	helpstring("IExifRemoverShellExt Interface"),
+	pointer_default(unique)
+]
+interface IExifRemoverShellExt : IUnknown{
+};
+[		
+	uuid(9039ACDB-C5F5-45A4-BE7B-CE30B9D0C75D),
+	version(1.0),
+	helpstring("ExifRemoverExt 1.0 Type Library")
+]
+library ExifRemoverExtLib
+{
+	importlib("stdole2.tlb");
+	[			
+		uuid(B79D2F2C-42F6-48E3-9FBE-0E2C76CC4422),
+		helpstring("ExifRemoverShellExt Class")
+	]
+	coclass ExifRemoverShellExt
+	{
+		[default] interface IExifRemoverShellExt;
+	};
+};

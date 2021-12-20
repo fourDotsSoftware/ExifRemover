@@ -1,0 +1,10 @@
+; ExifRemoverExt.def : Declares the module parameters.
+
+LIBRARY      "ExifRemoverExt.DLL"
+
+EXPORTS
+	DllCanUnloadNow		PRIVATE
+	DllGetClassObject	PRIVATE
+	DllRegisterServer	PRIVATE
+	DllUnregisterServer	PRIVATE
+	
